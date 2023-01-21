@@ -84,7 +84,7 @@ const App = () => {
               <div className="w-full flex-1 flex justify-center items-center text-xl bg-gray-700 rounded-lg py-1 gap-2"><TbWind/>{wind===""?<BsSunFill className='animate-spin'/>:` ${wind} m/sec`}</div>
               <div className="w-full flex-1 flex justify-center items-center text-xl bg-gray-700 rounded-lg py-1 gap-2"><TbWorldLatitude/>{lat===""?<BsSunFill className='animate-spin'/>:` ${lat}`}</div>
               <div className="w-full flex-1 flex justify-center items-center text-xl bg-gray-700 rounded-lg py-1 gap-2"><TbWorldLongitude/>{lon===""?<BsSunFill className='animate-spin'/>:` ${lon}`}</div>
-              <div className="w-full flex-1 flex justify-center items-center text-xl py-1 gap-2">Created by Harsh Pratap Singh</div>
+              <div className="w-full flex-1 flex justify-center items-center text-xl gap-2">Created by Harsh Pratap Singh</div>
             </div>
           </div>
         </div>

@@ -40,37 +40,37 @@ const App = () => {
       if(weather==="")
         return <BsSunFill className='w-24 h-24 animate-spin'/>
       else if(weather==="clear sky")
-        return <BsSunFill className='w-24 h-24 sm:w-36 sm:h-36 motion-safe:animate-pulse'/>
+        return <BsSunFill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
       else if(weather==="clear sky")
-        return <BsSunFill className='w-24 h-24 sm:w-36 sm:h-36 motion-safe:animate-pulse'/>
+        return <BsSunFill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
       else if(weather==="few clouds")
-        return <BsFillCloudFill className='w-24 h-24 sm:w-36 sm:h-36 motion-safe:animate-pulse'/>
+        return <BsFillCloudFill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
       else if(weather==="scattered clouds")
-        return <BsFillCloudsFill className='w-24 h-24 sm:w-36 sm:h-36 motion-safe:animate-pulse'/>
+        return <BsFillCloudsFill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
       else if(weather==="shower rain")
-        return <BsFillCloudRainFill className='w-24 h-24 sm:w-36 sm:h-36 motion-safe:animate-pulse'/>
+        return <BsFillCloudRainFill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
         else if(weather==="rain")
-        return <BsCloudRainHeavyFill className='w-24 h-24 sm:w-36 sm:h-36 motion-safe:animate-pulse'/>
+        return <BsCloudRainHeavyFill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
         else if(weather==="thunderstorm")
-        return <BsCloudLightningRainFill className='w-24 h-24 sm:w-36 sm:h-36 motion-safe:animate-pulse'/>
+        return <BsCloudLightningRainFill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
         else if(weather==="snow")
-        return <BsCloudSnowFill className='w-24 h-24 sm:w-36 sm:h-36 motion-safe:animate-pulse'/>
+        return <BsCloudSnowFill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
         else if(weather==="mist")
-        return <BsFillCloudHaze2Fill className='w-24 h-24 sm:w-36 sm:h-36 motion-safe:animate-pulse'/>
+        return <BsFillCloudHaze2Fill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
         else
-          return <BsFillCloudsFill className='w-24 h-24 sm:w-36 sm:h-36 motion-safe:animate-pulse'/>
+          return <BsFillCloudsFill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
       }
   return (
     <div className="bg-gray-700 h-screen flex justify-center font-customfont">
-      <div className="bg-gray-900 w-11/12 sm:w-5/12 md:w-6/12 my-4 rounded-xl text-white flex flex-col gap-4 justify-center items-center shadow-2xl">
+      <div className="bg-gray-900 w-11/12 sm:w-5/12 md:w-6/12 my-2 rounded-xl text-white flex flex-col gap-4 justify-center items-center shadow-2xl">
         <div className='w-11/12 rounded-lg flex justify-center items-center gap-2'>
-          <input type="text" className='w-full h-2 sm:h-6  rounded-lg bg-gray-700 outline-none pl-4 py-6 text-xl' placeholder="Search" value={search} onChange={(e)=>setSearch(e.target.value)}/><BsSearch className='w-10 h-10 sm:w-12 sm:h-12 cursor-pointer' onClick={handleSubmit}/></div>
+          <input type="text" className='w-full h-2 sm:h-4  rounded-lg bg-gray-700 outline-none pl-4 py-6 text-xl' placeholder="Search" value={search} onChange={(e)=>setSearch(e.target.value)}/><BsSearch className='w-10 h-10 sm:w-12 sm:h-12 cursor-pointer' onClick={handleSubmit}/></div>
         <div className="w-11/12 h-11/12">
           <div className="flex justify-between item-center">
             <div className="flex justify-center items-center rounded-lg px-4 py-2 bg-gray-700 text-xl">{location===""?<BsSunFill className='animate-spin'/>:location}</div>
             <div className="flex justify-center items-center rounded-lg px-4 py-2 bg-gray-700 text-xl">{country===""?<BsSunFill className='animate-spin'/>:country}</div>
           </div>
-          <div className="flex justify-center items-center py-12 bg-gray-700 rounded-full  mt-4 sm:mt-6 sm:mb-4">
+          <div className="flex justify-center items-center py-12 sm:py-4 bg-gray-700 rounded-full  mt-4 sm:mt-6 sm:mb-4">
             {
               displayIcon()
             }

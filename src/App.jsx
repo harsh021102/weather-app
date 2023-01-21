@@ -55,7 +55,7 @@ const App = () => {
         return <BsCloudLightningRainFill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
         else if(weather==="snow")
         return <BsCloudSnowFill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
-        else if(weather==="mist")
+        else if(weather==="mist"||weather==="haze")
         return <BsFillCloudHaze2Fill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
         else
           return <BsFillCloudsFill className='w-24 h-24 sm:w-28 sm:h-28 motion-safe:animate-pulse'/>
